@@ -417,6 +417,9 @@ body {
   width: 23%;
   color:var(--tertiary) ;
   margin-top: 1%;
+  font-size: 3.5rem;
+  font-family: 'Ubuntu';
+  font-weight: bold;
 }
 
 #Aboutusheader::after {
@@ -460,14 +463,15 @@ body {
   /* Adjusts width dynamically */
   max-width: 400px;
   padding: 20px;
-  background: var(--aboutusbg);
+  background: rgba(15, 23, 42, 0.682);
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 94, 0, 0.3);
 }
 
 #mission:hover,#vision:hover {
   transform: scale(1.1);
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 20px rgba(102, 81, 66, 0.4);
 }
 
 #mainContent #h1 {
@@ -476,16 +480,7 @@ body {
   position: relative;
 }
 
-#mainContent #h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 0;
-  height: 3px;
-  background:var(--primary);
-  animation: underlineGrow 1s ease-out forwards 1s;
-}
+
 
 #p1 {
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
@@ -496,7 +491,7 @@ body {
 #p {
   margin: 2% 10%;
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
-  background: var(--aboutusbg);
+  background: rgba(15, 23, 42, 0.682);
   padding: 1rem;
   border-radius: 10px;
   color:var(--tertiary) ;
@@ -857,7 +852,7 @@ textarea {
 }
 
 .contact-form {
-  background-color: var(--primary);
+  background: rgba(15, 23, 42, 0.742);
   position: relative;
 }
 
@@ -868,7 +863,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color:var(--primary);
+  background: rgba(15, 23, 42, 0.742);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -893,11 +888,15 @@ textarea {
   position: relative;
   margin: 1rem 0;
 }
+.title{
+  color: #ccc;
+}
 
 .ContactInput {
   width: 100%;
   outline: none;
-  border: 1.5px solid var(--tertiary);
+  border: 0;
+  /* border: 1.5px solid var(--tertiary); */
   padding: 0.6rem 1.2rem;
   color: var(--tertiary);
   font-weight: 500;
@@ -906,8 +905,11 @@ textarea {
   border-radius: 25px;
   background-color:transparent;
   z-index: 0;
+  box-shadow: 0 4px 10px rgba(81, 81, 81, 0.375);
 }
-
+#msg{
+  resize: none;
+}
 
 .input-container input::placeholder {
   color: var(--tertiary);
@@ -919,7 +921,7 @@ textarea {
 
 #send {
   padding: 0.6rem 1.3rem;
-  background: linear-gradient(45deg, red, orange);
+  background: linear-gradient(60deg, rgb(21, 32, 44), rgb(37, 75, 109));
   font-size: 0.95rem;
   color: var(--tertiary);
   line-height: 1;
@@ -956,10 +958,10 @@ textarea {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: var(--primary);
+  background: rgba(15, 23, 42, 0.742);
   top: 50%;
   transform: translateY(-50%);
-  border: var(--primary) 2px solid;
+  border: rgba(15, 23, 42, 0.742) 2px solid;
 }
 
 .input-container span:before {
@@ -983,11 +985,16 @@ textarea {
   opacity: 1;
 }
 
+#msg{
+  resize: none;
+  overflow: hidden;
+}
+
 .contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
   background-color: transparent;
-  border: var(--primary) 2px solid;
+  border: rgba(15, 23, 42, 0.95) 4px solid;
 }
 
 .contact-info .title {
@@ -1032,8 +1039,8 @@ textarea {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, orange, red);
-  color: black;
+  background: linear-gradient(60deg, rgb(21, 32, 44), rgb(37, 75, 109));
+  color: rgb(255, 255, 255);
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
@@ -1160,7 +1167,7 @@ textarea {
 
 /* footer Css */
 #footer {
-  background: linear-gradient(var(--secondary),var(--primary) );
+  background: linear-gradient(black, rgb(18, 28, 39));
   padding-top: 50px;
   margin-bottom: 0;
   margin-top: 4%;
@@ -1220,8 +1227,8 @@ h3 {
 
 .list li:hover::before {
   width: 70px;
-  color: var(--secondary);
-  background: var(--secondary);
+  color: var(--primary);
+  background: var(--primary);
 }
 
 .social-icons1{
@@ -1239,6 +1246,13 @@ h3 {
   color: var(--tertiary);
   font-size: 25px;
 }
+li a:hover {
+  color: var(--primary);
+}
+
+.social-icons1 i:hover {
+  color: var(--primary);
+}
 
 a {
   text-decoration: none;
@@ -1246,11 +1260,11 @@ a {
 }
 
 a:hover {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .social-icons1 i:hover {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .bottom-bar {
@@ -1890,4 +1904,36 @@ body::-webkit-scrollbar {
 .fade-in-text.visible {
   opacity: 1;
   transform: translateY(0);
+}
+.popup-contact {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content-contact {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content-contact button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(60deg, rgb(21, 32, 44), rgb(37, 75, 109));
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content-contact button:hover {
+  background: linear-gradient(60deg, rgb(37, 75, 109),rgb(21, 32, 44));
 }

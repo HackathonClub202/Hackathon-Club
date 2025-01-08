@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Emailjs for contact
 function sendMail(){
+  Popup(event);
   let parms = {
       name : document.getElementById("name").value,
       email : document.getElementById("Email").value,
@@ -256,3 +257,14 @@ document.addEventListener('mousemove', (e) => {
 card.addEventListener('mouseleave', () => {
   card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
 });
+function Popup(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Show the popup
+  document.getElementById("successPopup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("successPopup").style.display = "none";
+
+}
