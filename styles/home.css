@@ -322,7 +322,7 @@ body {
       display: flex; /* Show hamburger menu on smaller screens */
   }
 
-  .navbar-na    v {
+  .navbar-nav {
       display: none; /* Hide the main menu on small screens */
   }
 
@@ -616,15 +616,16 @@ body {
 
 /* memories. . . . . . .  */
 
-
-
-#memories {
+#memories{
+  font-family: 'Ubuntu';
     text-align: center;
-    font-size: 70px;
-    padding-top: 20px;
-    color: var(--primary);
-    transition: all 1s linear 1s;
-    font-family: 'Ubuntu';
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(45deg, #FF6B00, #4a5cd1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 107, 0, 0.2);
 }
 
 /* #memories:hover {
@@ -828,509 +829,7 @@ body {
 }
 
 
-
-
-
-/* team. . . . . . . . */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.vp{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 6px;
-    gap: none;
-}
-
-.vp h2{
-    font-size: 12px;
-}
-
-#team{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#team h1{
-    padding-top: 20px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 28px ;
-    font-size: 40px;
-    color: var(--tertiary);
-}
-
-.president {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* border: 1px solid white; */
-}
-
-#Presidenttext{
-    margin-top: -20px;
-    color: var(--tertiary);
-}
-
-#team .vice-president{
-    /* border: 1px solid white; */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 30px 0;
-}
-
-.card{
-    transition: transform 1.2s;
-}
-
-.card:hover{
-    transform: scale(1.1);
-}
-
-.core-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 30px 0;
-}
-
-.technical-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-.management-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-.social-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    /* display: grid; */
-    /* grid-template-columns: repeat(3,1fr); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-.treasury-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin: 40px 0;
-}
-
-.publicity-team{
-    /* border: 1px solid white; */
-    border-radius: 20px;
-    position: relative;
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-
-.vice-president .card{
-    position: relative;
-    width: 250px;
-    height: 320px;
-    margin: 20px;
-    margin-bottom: 0px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.president .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.core-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    padding: auto;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.technical-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.management-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.treasury-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.publicity-team .card{
-    position: relative;
-    width: 280px;
-    height: 320px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
-    inset 0 0 0 1000px rgba(67, 52, 109, .6);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.card .imbBx, .imbBx img{
-    width: 100%;
-    height: 100%;
-}
-
-.card .content{
-    position: absolute;
-    bottom: -160px;
-    width: 100%;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    transition: bottom 0.5s;
-    /* transition-delay: 0.65s; */
-}
-
-.card:hover .content{
-    bottom: 0;
-    transition-delay: 0s;
-}
-
-.content .contentBx h3{
-    text-transform: uppercase;
-    color: var(--tertiary);
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    margin: 20px 0 15px;
-    line-height: 1.1em;
-    transition: 0.5s;
-    /* transition-delay: 0.6s; */
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-.card:hover .content .contentBx h3{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.content .contentBx h3 span{
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: initial;
-}
-
-.content .sci{
-    position: relative;
-    bottom: 10px;
-    display: flex;
-}
-
-.content .sci li{
-    list-style: none;
-    margin: 0 10px;
-    transform: translateY(40px);
-    transition: 0.5s;
-    opacity: 0;
-    transition-delay: 0s;
-}
-
-.card:hover .content .sci li{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.content .sci li a{
-    color:var(--tertiary);
-    font-size: 24px;
-}
-
-@media screen and (max-width:1500px) {
-    .designation{
-        margin-top: -4px;
-        margin-bottom: 30px;
-    }
-    .core-team{
-        grid-template-columns: repeat(3,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .core-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .technical-team{
-        grid-template-columns: repeat(3,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .technical-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .management-team{
-        grid-template-columns: repeat(3,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .management-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .social-team{
-        grid-template-columns: repeat(3,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .social-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .publicity-team{
-        grid-template-columns: repeat(3,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .publicity-team .card{
-        width: 300px;
-        height: 350px;
-    }
-}
-@media screen and (max-width:1060px) {
-    .core-team{
-        grid-template-columns: repeat(2,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .core-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .technical-team{
-        grid-template-columns: repeat(2,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .technical-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .management-team{
-        grid-template-columns: repeat(2,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .management-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .social-team{
-        grid-template-columns: repeat(2,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .social-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .publicity-team{
-        grid-template-columns: repeat(2,1fr);
-        width: fit-content;
-        margin: auto;
-    }
-    .publicity-team .card{
-        width: 300px;
-        height: 350px;
-    }
-    .vice-president .card{
-        width: 300px;
-        height: 350px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    #team .vice-president{
-        justify-content: center;
-        flex-direction: column;
-        /* margin-left: 2%; */
-    }
-    .core-team{
-        grid-template-columns: repeat(1,1fr);
-        width: fit-content;
-        /* margin: auto; */
-    }
-    .technical-team{
-        grid-template-columns: repeat(1,1fr);
-        width: fit-content;
-        /* margin: auto; */
-    }
-    .management-team{
-        grid-template-columns: repeat(1,1fr);
-        width: fit-content;
-        /* margin: auto; */
-    }
-    .social-team{
-        grid-template-columns: repeat(1,1fr);
-        width: fit-content;
-        /* margin: auto; */
-    }
-    .publicity-team{
-        grid-template-columns: repeat(1,1fr);
-        width: fit-content;
-        /* margin: auto; */
-    }
-    .president .card{
-        width: 300px;
-        height: 350px;
-    }
-    .vice-president .card{
-        width: 300px;
-        height: 350px;
-    }
-    .vice-president .card{
-        width: 300px;
-        height: 350px;
-    }
-}
-
-@media screen and (min-width: 1158px) and (max-width: 1450px) {
-    #team .vice-president{
-        /* border: 1px solid white; */
-        width: 1100px;
-    }
-}
-
-/* .vice-president .card{
-    display: flex;
-    flex-direction: column;
-}
-
-.vice-president .card h1{
-    max-height: 40px;
-    margin-bottom: 60px;
-    font-size: 30px;
-    background-color: none;
-    /* border: 1px solid white; */
-
-
-
-/* cotactus. . . . . .     */
-
-
-
+/* style for  contactUs */
 textarea {
   font-family: "Ubuntu", sans-serif;
   background:var(--secondary);
@@ -1879,7 +1378,8 @@ body {
 }
 
 .event-card:hover {
-  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2); /* Box shadow effect on hover */
+  box-shadow: 0px 8px 20px #ffffff33; /* Box shadow effect on hover */
+  
   
 }
 .card-back:hover p {
@@ -1896,8 +1396,10 @@ body {
   overflow: hidden;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 /* Front of the Card */
@@ -1919,12 +1421,36 @@ body {
   transform: rotateY(180deg);
   padding: 1rem;
   /* text-align: center; */
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #ffffff33;
+}
+.completed-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.completed-button:hover {
+  background: green;
+  transform: scale(1.05);
+ 
+}
+
+.completed-button:active {
+  transform: scale(1);
+}
+#apply{
+  background: red;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   #photo {
