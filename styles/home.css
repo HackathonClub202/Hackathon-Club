@@ -514,31 +514,6 @@ body {
     color: #d97b00;
 }
 
-@keyframes underlineGrow {
-  0% {
-      width: 0;
-  }
-
-  100% {
-      width: 80%;
-  }
-}
-
-.scroll-card {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 10s ease-in-out, opacity 10s ease-in-out;   /* transition-delay: 2s;*/
-}
-
-.scroll-card[data-scroll="left"] {
-  transform: translateX(-100%);
-}
-
-.scroll-card.scroll-visible {
-  opacity: 1;
-  transform: translateX(0);
-} 
-
 @media (max-width: 768px) {
   #mainContent {
       flex-direction: column;
@@ -551,10 +526,10 @@ body {
 
   #Aboutusheader {
       font-size: clamp(1.5rem, 4vw, 2.5rem);
-      width: 45%;
+      width: 23%;
       top: 60px;
       left: auto;
-      margin-bottom: 5%;
+      margin-bottom: 3%;
       color:var(--tertiary) ;
   }
 
@@ -1600,7 +1575,9 @@ body {
   h1 {
       font-size: 2.5rem;
   }
-  
+  #visitorheader{
+    margin-top: 2%;
+  }
   .domains-grid {
       grid-template-columns: repeat(2, 1fr);
       /* padding: 0.5rem; */
@@ -1788,8 +1765,8 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    
+  #visitorheader{
+    margin-top: 2%;
   }
 
   .hero-text {
@@ -1880,6 +1857,9 @@ body::-webkit-scrollbar {
       font-size: 5px;
       padding: 6px 10px;
   }
+  #visitorheader{
+    margin-top: 2%;
+  }
 }
 
 /* Fade-in animation for scroll */
@@ -1936,4 +1916,20 @@ body::-webkit-scrollbar {
 
 .popup-content-contact button:hover {
   background: linear-gradient(60deg, rgb(37, 75, 109),rgb(21, 32, 44));
+}
+
+#counter-visitor {
+  display: inline-block;
+  font-size: 1.3em;
+  color: #fff;
+  background: linear-gradient(60deg, rgb(37, 75, 109),rgb(21, 32, 44));
+  /* border: 3px solid #4CAF50; */
+  padding: 7px 20px;
+  /* border-radius: 10px; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2%;
+}
+
+#visitorheader{
+  margin-top: 7%;
 }

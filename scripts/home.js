@@ -268,3 +268,17 @@ function closePopup() {
   document.getElementById("successPopup").style.display = "none";
 
 }
+
+// Counter for page views
+
+ // Retrieve count from localStorage
+ let count = localStorage.getItem('page_view_count') || 0;
+
+ // Increment count
+ count++;
+
+ // Save updated count to localStorage
+ localStorage.setItem('page_view_count', count);
+
+ // Display count
+ document.getElementById('counter-visitor').innerText = count;
