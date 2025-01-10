@@ -281,4 +281,4 @@ function closePopup() {
  localStorage.setItem('page_view_count', count);
 
  // Display count
- document.getElementById('counter-visitor').innerText = count;
+ document.getElementById('count-visitor').innerText = count;
