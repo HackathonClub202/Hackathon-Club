@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Enable scrolling
     document.body.style.overflow = "auto";
     }, 2000); // Adjust the delay as needed
+
+    
   });
 
 
