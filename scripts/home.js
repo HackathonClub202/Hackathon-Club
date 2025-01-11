@@ -1,3 +1,36 @@
+
+// motoanimation. . . ..
+
+const text = "CODE | CONQUER | COLLABORATE";
+const typewriterText = document.querySelector(".typewriter-text");
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    typewriterText.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100); // Adjust typing speed
+  } else {
+    // Reset after a delay for infinite animation
+    setTimeout(() => {
+      typewriterText.textContent = "";
+      index = 0;
+      typeWriter();
+    }, 1000); // Pause before restarting
+  }
+}
+
+// Start the typewriter animation
+typeWriter();
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const interface = document.getElementById("relodelogo");
   
