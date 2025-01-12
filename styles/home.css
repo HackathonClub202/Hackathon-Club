@@ -135,12 +135,15 @@ body {
 .navbar-nav.mobile {
   flex-direction: column;
   gap: 0.5rem;
+  align-items: start;
   display: none; /* Hidden by default for mobile */
   position: absolute;
-  top: 60px;
-  left: 30vw;
-  width: 100%;
+  top: 70%;
+  left: 65vw;
+  background-color:var(--secondary);
+  width: 20%;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .navbar-nav.mobile.active {
@@ -166,6 +169,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   display: block;
+  font-size: 1.3rem;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -290,10 +294,10 @@ body {
     font-size: 1.5vw;
   }
   #navlogo {
-    width: 10vw;
+    width: 8vw;
   }
   #title h4 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .typewriter {
     width: 39vw;
@@ -320,6 +324,7 @@ body {
 
   .navbar-nav.mobile {
     display: none; /* Mobile-specific menu hidden by default */
+    left: 80vw;
   }
   .dropdown-menu.active {
     background-color: #000000;
