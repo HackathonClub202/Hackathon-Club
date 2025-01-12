@@ -1,7 +1,7 @@
 
 // motoanimation. . . ..
 
-const text = "CODE | CONQUER | COLLABORATE";
+const text = "CODE | COLLABORATE | CONQUER";
 const typewriterText = document.querySelector(".typewriter-text");
 let index = 0;
 
@@ -127,6 +127,8 @@ dropdownLinkMobile.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default anchor behavior
     dropdownMenuMobile.classList.toggle('active'); // Toggle visibility
 });
+
+
 
 
 
