@@ -114,7 +114,7 @@ const dropdownMenuDesktop = dropdownLinkDesktop.querySelector('.dropdown-menu');
 
 // Click functionality for dropdown in desktop view
 dropdownLinkDesktop.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent the default anchor behavior
+    // e.preventDefault(); // Prevent the default anchor behavior
     dropdownMenuDesktop.classList.toggle('active'); // Toggle visibility
 });
 
@@ -124,7 +124,7 @@ const dropdownMenuMobile = dropdownLinkMobile.querySelector('.dropdown-menu');
 
 // Toggle the dropdown on click (in mobile menu)
 dropdownLinkMobile.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent the default anchor behavior
+    // e.preventDefault(); // Prevent the default anchor behavior
     dropdownMenuMobile.classList.toggle('active'); // Toggle visibility
 });
 
