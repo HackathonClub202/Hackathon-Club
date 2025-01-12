@@ -272,7 +272,7 @@ document.addEventListener("scroll", () => {
 // Apply mouse movement effect to .unique-card
 const card = document.querySelector('.unique-card');
 
-document.addEventListener('mousemove', (e) => {
+card.addEventListener('mousemove', (e) => {
   const cardRect = card.getBoundingClientRect();
   const cardX = cardRect.left + cardRect.width / 2; // Center X of the card
   const cardY = cardRect.top + cardRect.height / 2; // Center Y of the card

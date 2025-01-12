@@ -186,7 +186,7 @@ p {
     padding: 60px 90px;
   }
   .unique-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
   .unique-title {
     font-size: 4em;
@@ -206,6 +206,7 @@ p {
 @media (max-width: 768px) {
   .unique-card {
     padding: 40px 60px;
+    height: 700px;
   }
   .unique-grid {
     grid-template-columns: 1fr;
@@ -226,6 +227,12 @@ p {
   }
   .unique-button:hover {
     animation: pulse 1s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 542px){
+  .unique-card{
+    height: 750px;
   }
 }
 
