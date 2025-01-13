@@ -139,9 +139,8 @@ body {
   display: none; /* Hidden by default for mobile */
   position: absolute;
   top: 70%;
-  left: 65vw;
+  left: 60vw;
   background-color:var(--secondary);
-  width: 20%;
   padding: 1rem;
   border-radius: 10px;
 }
